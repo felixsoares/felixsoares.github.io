@@ -15,10 +15,9 @@
 	
     <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1 class="animated bounceIn">Start Bootstrap</h1>
-            <h3>Free Bootstrap Themes &amp; Templates</h3>
-            <br>
-            <a href="#about" class="btn btn-light btn-lg">Find Out More <i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <h1 id="presentation"></h1>
+			<br>
+            <a href="#about" class="btn btn-default btn-circle btn-lg"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
         </div>
     </header>
 	
@@ -202,6 +201,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="lib/js/bootstrap.min.js"></script>
+	<script src="lib/js/typed.min.js"></script>
 	
 	<script>
 		var $doc = $('html, body');
@@ -210,6 +210,13 @@
 				scrollTop: $( $.attr(this, 'href') ).offset().top
 			}, 1000);
 			return false;
+		});
+		
+		$(function(){
+			$("#presentation").typed({
+				strings: ["Precisando de algo novo?", "Tem alguma ideia ?", "Posso te ajudar"],
+				typeSpeed: 90
+			});
 		});
 	</script>
 </body>
