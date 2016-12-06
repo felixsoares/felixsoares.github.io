@@ -204,8 +204,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="lib/js/bootstrap.min.js"></script>
-	<script src="lib/js/typed.min.js"></script>
-	<script src="lib/js/jquery.fittext.js"></script>	
+	<script src="lib/js/typed.min.js"></script>	
 	<script>
 		var $doc = $('html, body');
 		$('a').click(function() {
@@ -215,18 +214,14 @@
 			return false;
 		});
 		
-		/**
 		$(function(){
 			$("#presentation").typed({
 				strings: ["Vamos falar sobre desenvolvimento?"],
 				typeSpeed: 90
 			});
 		});
-		**/
 		
-		$(document).ready(function() {
-			jQuery("#top").fitText(0.8, { minFontSize: '18px', maxFontSize: '20px' });
-			
+		$(document).ready(function() {		
 			
 			$(window).scroll(function() {
 			
