@@ -205,7 +205,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="lib/js/bootstrap.min.js"></script>
 	<script src="lib/js/typed.min.js"></script>
-	
+	<script src="lib/js/jquery.fittext.js"></script>	
 	<script>
 		var $doc = $('html, body');
 		$('a').click(function() {
@@ -223,6 +223,9 @@
 		});
 		
 		$(document).ready(function() {
+			jQuery("#top").fitText(0.8, { minFontSize: '18px', maxFontSize: '20px' });
+			
+			
 			$(window).scroll(function() {
 			
 				if ($(window).scrollTop() >= 400 && $(window).scrollTop() <= ($(document).height() - 600)) {
