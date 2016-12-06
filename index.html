@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Felix Soares</title>
+	
 	<link href="lib/css/bootstrap.css" rel="stylesheet">
 	<link href="lib/css/animate.css" rel="stylesheet">
 	<link href="lib/css/style.css" rel="stylesheet">
@@ -207,6 +208,7 @@
 	<script src="lib/js/typed.min.js"></script>	
 	<script>
 		var $doc = $('html, body');
+		
 		$('a').click(function() {
 			$doc.animate({
 				scrollTop: $( $.attr(this, 'href') ).offset().top
@@ -217,11 +219,11 @@
 		$(function(){
 			$("#presentation").typed({
 				strings: ["Vamos falar sobre desenvolvimento?"],
-				typeSpeed: 90
+				typeSpeed: 50
 			});
 		});
 		
-		$(document).ready(function() {		
+		$(document).ready(function() {
 			
 			$(window).scroll(function() {
 			
@@ -231,6 +233,7 @@
 				else {
 					$('#to-top').addClass('hide');
 				}
+				
 			});
 		});
 	</script>
